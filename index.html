@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenue !</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Astronomie">Astronomie</a></li>
+                    <li><a href="#technologie">Technologie</a></li>
+                    <li><a href="#aviation">Aviation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="presentation fade-in">
+            <h2>Bienvenue sur mon site ^^</h2>
+            <p>Bienvenue sur mon Portfolio !<br>
+                Je suis heureux de vous accueillir sur mon site, où je partage mes multiples passions.<br>
+                
+                Au cours de votre visite, vous découvrirez mon amour pour l'Astronomie, ma fascination pour la technologie et ma passion pour l'aviation. Chaque section vous plongera dans ces univers captivants.<br>
+                
+                <b>Vous pouvez cliquer sur les titres souligné pour avoir plus de détail sur le sujet.</b><br>
+
+                Un conseil que je vous donne, cher voyageur : des secrets sont dissimulés au sein de ce site.<br>
+                Je vous conseille d'ouvrir bien les yeux ;)
+            </p>
+        </section>
+
+        <section id="Astronomie" class="fade-in">
+            <h2><a href="astronomie.html"><u>Astronomie</u></a></h2>
+            <p>Je suis fasciné par l'Astronomie. J'étudie les galaxes, les planètes et le cycle de vie des corps celeste</p>
+            <ul>
+                <li>Observation spatiale</li>
+                <li>Étude des orbites et des vitesses de déplacement</li>
+                <li>Étude du fonctionnement des satellites et des fusées</li>
+            </ul>
+        </section>
+
+        <section id="technologie" class="fade-in">
+            <h2><a href="technologie.html"><u>Technologie</u></a></h2>
+            <p>Passionné par les dernières innovations technologiques, je suis toujours à l'affût des nouvelles tendances et des développements dans le domaine.</p>
+            <ul>
+                <li>Mise en place de multiples serveurs</li>
+                <li>Développement de projets en programmation (Plex, Pi Hole, OwnCloud, NextCloud, Filezilla, etc...)</li>
+                <li>Apprentissage de Linux depuis 3 ans</li>
+            </ul>
+        </section>
+
+        <section id="aviation" class="fade-in">
+            <h2><a href="aviation.html"><u>Aviation</u></a></h2>
+            <p>Mon amour pour l'aviation m'a conduit à explorer tout ce qui touche aux avions et à l'aviation commerciale.</p>
+            <ul>
+                <li>Plusieurs heures de simulateur</li>
+                <li>Études du fonctionnement des avions</li>
+                <li>Suivi des actualités aéronautiques</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <h2>Contactez-moi</h2>
+            <form>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Romain Ultis. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sélectionner tous les éléments avec la classe "fade-in"
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        // Fonction pour vérifier si l'élément est visible
+        function checkVisibility() {
+            fadeElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const viewHeight = Math.min(window.innerHeight, document.documentElement.clientHeight);
+                
+                if (!(rect.bottom < 0 || rect.top - viewHeight >= 0)) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        // Appel de la fonction au chargement de la page
+        checkVisibility();
+
+        // Appel de la fonction lors du défilement
+        window.addEventListener('scroll', checkVisibility);
+    });
+    </script>
+</body>
+</html>
