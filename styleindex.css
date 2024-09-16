@@ -101,15 +101,6 @@ ul {
     border-radius: 5px;
 }
 
-.btn.dark-mode {
-    background: #333;
-    color: #e0e0e0;
-}
-
-.btn.dark-mode:hover {
-    background: #555;
-}
-
 .btn:hover {
     background: #45a049;
 }
