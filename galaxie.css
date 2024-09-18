@@ -89,3 +89,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#sagittarius {
+    color : white;   
+}
+
+#planet {
+    color : white;
+    text-decoration: none;
+}
