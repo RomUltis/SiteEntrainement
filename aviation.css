@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0A2540, #1B3B5F); /* Dégradé bleu marine pour un effet ciel nocturne */
+    color: #f1f1f1;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.85); /* Noir semi-transparent pour un effet de profondeur */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFCC00; /* Jaune doré, rappelant la lumière des pistes d'atterrissage la nuit */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF; /* Blanc pur pour le survol, symbolisant les avions blancs et la lumière */
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Blanc transparent pour évoquer la légèreté et l'altitude */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* Ombre plus marquée pour un effet plus net */
+}
+
+h2 {
+    color: #FFCC00; /* Doré, pour rappeler la brillance du soleil à travers les nuages */
+    font-size: 24px;
+}
+
+.galaxy-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.galaxy {
+    background: rgba(255, 255, 255, 0.2); /* Blanc légèrement transparent, créant un effet de métal poli */
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation plus fluide */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.galaxy:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Accentuation de l'ombre au survol */
+}
+
+.galaxy img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(30, 43, 95, 0.8); /* Bleu profond avec opacité pour un effet technique */
+    border-radius: 5px;
+    flex: 1;
+    color: #f1f1f1;
+    margin: 0 10px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    padding: 15px 0;
+    color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 18px;
+    color: #FFCC00;
+}
+
+footer p {
+    color: #f1f1f1;
+}
+
+#avion {
+    color: white;
+}
