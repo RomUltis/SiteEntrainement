@@ -106,3 +106,8 @@ footer p {
 #avion {
     color: white;
 }
+
+#compagnie {
+    color: white;
+    text-decoration: none;
+}
