@@ -1,0 +1,38 @@
+h1{
+    position: relative;
+    left: 150px;
+}
+
+#moi{
+    position: absolute;
+    left: 380px;
+    top: 85px;
+}
+
+#text{
+    position: absolute;
+}
+
+#text2{
+    position: absolute;
+    float: left;
+    top: 270px;
+}
+
+#text3{
+    position: absolute;
+    float: left;
+    top: 310px;
+}
+
+#text4{
+    position: absolute;
+    float: left;
+    top: 420px;
+}
+
+#training{
+    position: relative;
+    float: left;
+    top: 380px;
+}

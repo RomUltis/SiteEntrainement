@@ -98,3 +98,15 @@ footer {
     color : white;
     text-decoration: none;
 }
+
+.paragraph-group {
+    margin-bottom: 15px; /* Espace entre les groupes de paragraphes */
+}
+
+.paragraph-group p {
+    margin: 3px 0; /* Réduit l'espace entre les lignes de chaque paragraphe */
+}
+
+p {
+    line-height: 1.5;
+}

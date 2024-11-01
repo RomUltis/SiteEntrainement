@@ -25,20 +25,16 @@
     <main class="container">
         <section class="presentation fade-in">
             <h2>Bienvenue sur mon site ^^</h2>
-            <p> Je suis heureux de vous accueillir sur mon site, où je partage mes multiples passions.<br>
-                
-                Au cours de votre visite, vous découvrirez mon amour pour l'Astronomie, ma fascination pour la technologie et ma passion pour l'aviation. Chaque section vous plongera dans ces univers captivants.<br>
-                
-                <b>Vous pouvez cliquer sur les titres souligné pour avoir plus de détail sur le sujet.</b><br>
-
-                Un conseil que je vous donne, cher voyageur : des secrets sont dissimulés au sein de ce site.<br>
-                Je vous conseille de bien ouvrir vos n'oeils ;)
-            </p>
+            <p>Je suis heureux de vous accueillir sur mon site, où je partage mes multiples passions.</p>
+            <p>Au cours de votre visite, vous découvrirez mon amour pour l'Astronomie, ma fascination pour la technologie et ma passion pour l'aviation. Chaque section vous plongera dans ces univers captivants.</p>
+            <p><b>Vous pouvez cliquer sur les titres soulignés pour avoir plus de détail sur le sujet.</b></p>
+            <p>Un conseil que je vous donne, cher voyageur : des secrets sont dissimulés au sein de ce site.</p>
+            <p>Je vous conseille de bien ouvrir vos n'œils ;)</p>
         </section>
 
         <section id="Astronomie" class="fade-in">
             <h2><a href="astronomie.html"><u>Astronomie</u></a></h2>
-            <p>Je suis fasciné par l'Astronomie. J'étudie les galaxes, les planètes et le cycle de vie des corps celeste</p>
+            <p>Je suis fasciné par l'Astronomie. J'étudie les galaxies, les planètes et le cycle de vie des corps célestes.</p>
             <ul>
                 <li>Observation spatiale</li>
                 <li>Étude des orbites et des vitesses de déplacement</li>
@@ -92,10 +88,8 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Sélectionner tous les éléments avec la classe "fade-in"
         const fadeElements = document.querySelectorAll('.fade-in');
-
-        // Fonction pour vérifier si l'élément est visible
+        
         function checkVisibility() {
             fadeElements.forEach(el => {
                 const rect = el.getBoundingClientRect();
@@ -106,11 +100,8 @@
                 }
             });
         }
-
-        // Appel de la fonction au chargement de la page
+        
         checkVisibility();
-
-        // Appel de la fonction lors du défilement
         window.addEventListener('scroll', checkVisibility);
     });
     </script>
