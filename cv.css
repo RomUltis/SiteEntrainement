@@ -28,11 +28,20 @@ h1{
 #text4{
     position: absolute;
     float: left;
-    top: 420px;
+    top: 450px;
 }
 
 #training{
-    position: relative;
+    position: absolute;
     float: left;
-    top: 380px;
+    top: 400px;
+    text-decoration: underline;
+}
+
+.paragraph-group {
+    margin-bottom: 15px; /* Espace entre les groupes de paragraphes */
+}
+
+.paragraph-group p {
+    margin: 3px 0; /* Réduit l'espace entre les lignes de chaque paragraphe */
 }
